@@ -1,6 +1,8 @@
 # minimal-haskell-emacs
 
-A minimal emacs configuration for haskell programming using dante and friends.
+A minimal emacs configuration for haskell programming using [dante](https://github.com/jyp/dante) and friends.
+
+[Visit dante's README.org to see the features list for Haskell editing](https://github.com/jyp/dante/blob/master/README.org).
 
 Package management approach is based on [this tutorial](http://y.tsutsumi.io/emacs-from-scratch-part-2-package-management.html).
 
