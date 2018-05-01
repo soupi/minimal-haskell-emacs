@@ -21,7 +21,6 @@
     flycheck-pos-tip
     flycheck-color-mode-line
 
-    ;intero
     dante
     )
    "a list of packages to ensure are installed at launch.")
