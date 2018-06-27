@@ -66,3 +66,15 @@
 (define-key haskell-mode-map (kbd "C-l C-l") 'haskell-process-load-or-reload)
 (define-key haskell-mode-map (kbd "C-c C-k") 'haskell-interactive-mode-clear)
 
+; search work under the cursor in hoogle
+
+(define-key haskell-mode-map (kbd "C-:") 'haskell-search-hoogle)
+
+;; default is firefox. Change this if you want to open hoogle on a different browser.
+(setq browse-url-generic-program (executable-find "firefox"))
+
+(defun haskell-search-hoogle ()
+   "Search hoogle for the word under the cursor"
+   (interactive)
+   (browse-url-generic (concat "https://hoogle.haskell.org/?hoogle=" (thing-at-point 'word))))
+
