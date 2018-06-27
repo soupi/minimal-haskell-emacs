@@ -10,6 +10,7 @@
 ; ; not create them.
 (defvar required-packages
   '(
+    evil
     popwin
 
     color-theme

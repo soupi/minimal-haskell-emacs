@@ -78,3 +78,21 @@
    (interactive)
    (browse-url-generic (concat "https://hoogle.haskell.org/?hoogle=" (thing-at-point 'word))))
 
+;; EVIL ;;
+
+(require 'evil)
+(evil-mode 1)
+
+(with-eval-after-load 'evil-maps
+  (define-key evil-motion-state-map (kbd "SPC") nil)
+  (define-key evil-visual-state-map (kbd "SPC") nil)
+  (define-key evil-motion-state-map (kbd "RET") nil)
+  (define-key evil-visual-state-map (kbd "RET") nil)
+  (define-key evil-motion-state-map (kbd "TAB") nil)
+  (define-key evil-visual-state-map (kbd "TAB") nil)
+
+  (define-key evil-normal-state-map (kbd "C-.") nil)
+  (define-key evil-normal-state-map (kbd "M-.") nil)
+)
+
+

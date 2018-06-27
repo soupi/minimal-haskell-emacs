@@ -1,6 +1,8 @@
-# minimal-haskell-emacs
+# minimal-haskell-emacs + evil-mode
 
 A minimal emacs configuration for haskell programming using [dante](https://github.com/jyp/dante) and friends.
+
+If you are coming from Vim, evil-mode is here to make you feel at home.
 
 [Visit dante's README.org to see the features list for Haskell editing](https://github.com/jyp/dante/blob/master/README.org).
 
