@@ -21,7 +21,7 @@ To install this configuration, clone the repository and place the following file
 So the steps are:
 
 ```
-git clone https://github.com/soupi/minimal-haskell-emacs
+git clone -b evil https://github.com/soupi/minimal-haskell-emacs
 cp minimal-haskell-emacs/.emacs  ~/
 cp -r minimal-haskell-emacs/.emacs.d ~/
 ```
