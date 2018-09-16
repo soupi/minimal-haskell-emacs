@@ -51,15 +51,12 @@
 
 (add-hook 'haskell-mode-hook 'dante-mode)
 
-(setq dante-repl-command-line-methods-alist
-  `((stack  . ,(lambda (_) '("stack" "repl" dante-target)))
-    (new-build . ,(lambda (root)
-                    (when (or (directory-files root nil ".*\\.cabal$")
-                              (file-exists-p "cabal.project"))
-                      '("cabal" "new-repl" dante-target))))
-    (bare . ,(lambda (_) '("cabal" "repl" dante-target)))))
 
-
+;; Uncomment this if you don't want flycheck to save the buffer all the time
+;; note that this way you will only be able to see flycheck comments when you save
+; (setq flymake-no-changes-timeout nil)
+; (setq flymake-start-syntax-check-on-newline nil)
+; (setq flycheck-check-syntax-automatically '(save mode-enabled))
 
 ;a few convenient shortcuts
 (define-key haskell-mode-map (kbd "C-c C-`") 'haskell-interactive-bring)
