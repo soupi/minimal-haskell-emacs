@@ -2,6 +2,9 @@
 
 A minimal emacs configuration for haskell programming using [dante](https://github.com/jyp/dante) and friends.
 
+* Coming from Vim? Try the [evil branch](https://github.com/soupi/minimal-haskell-emacs/tree/evil) which includes vim key bindings
+* [See it in action](https://www.youtube.com/watch?v=Ig5k3UkfvZ4)
+
 [Visit dante's README.org to see the features list for Haskell editing](https://github.com/jyp/dante/blob/master/README.org).
 
 Package management approach is based on [this tutorial](http://y.tsutsumi.io/emacs-from-scratch-part-2-package-management.html).
