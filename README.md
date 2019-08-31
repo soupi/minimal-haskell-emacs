@@ -51,7 +51,7 @@ Files:
 Buffers:
 
 - `F7` - Open buffers list
-- `C-\`` / `C-~` - next / previous buffer
+- `C-backtick` / `C-~` - next / previous buffer
 
 Windows:
 
