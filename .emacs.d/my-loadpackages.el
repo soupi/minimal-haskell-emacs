@@ -4,11 +4,15 @@
 (require 'popwin)
 (popwin-mode 1)
 
+;; sidebars
+(global-set-key [f7] 'buffer-menu)
+
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
+
 ;;COLOR THEMES
 
-(require 'color-theme)
-(set-frame-parameter nil 'background-mode 'dark)
-(set-terminal-parameter nil 'background-mode 'dark)
 (load-theme 'seti t)
 
 ;; COMPLETION
@@ -16,6 +20,7 @@
 (add-hook 'after-init-hook 'global-company-mode)
 
 ;shortcut for completion
+(add-hook 'after-init-hook 'global-company-mode)
 (global-set-key (kbd "C-c w") 'company-complete)
 
 ;after how many letters do we want to get completion tips? 1 means from the first letter
@@ -35,6 +40,8 @@
 (with-eval-after-load 'flycheck
   (flycheck-pos-tip-mode))
 
+(setq flycheck-pos-tip-timeout 60)
+
 (with-eval-after-load 'flycheck
   (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc)))
 
@@ -51,12 +58,7 @@
 
 (add-hook 'haskell-mode-hook 'dante-mode)
 
-
-;; Uncomment this if you don't want flycheck to save the buffer all the time
-;; note that this way you will only be able to see flycheck comments when you save
-; (setq flymake-no-changes-timeout nil)
-; (setq flymake-start-syntax-check-on-newline nil)
-; (setq flycheck-check-syntax-automatically '(save mode-enabled))
+(require 'haskell-mode)
 
 ;a few convenient shortcuts
 (define-key haskell-mode-map (kbd "C-c C-`") 'haskell-interactive-bring)

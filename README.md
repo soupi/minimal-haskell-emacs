@@ -11,6 +11,16 @@ A minimal emacs configuration for haskell programming using [dante](https://gith
 Package management approach is based on [this tutorial](http://y.tsutsumi.io/emacs-from-scratch-part-2-package-management.html).
 
 To get a haskell compiler, I recommend downloading [Stack](https://haskell-lang.org/get-started) and running `stack setup` to install GHC.
+Since `stack setup` does not install ghci in the global environment, you may want to add a script to do that with these commands:
+
+```sh
+if [ ! -f ~/.local/bin/ghci ]; then
+    echo "#\!/bin/bash" > ~/.local/bin/ghci
+    echo "stack exec -- ghci $@" >> ~/.local/bin/ghci
+    chmod +x ~/.local/bin/ghci
+fi
+```
+
 
 To install this configuration, clone the repository and place the following files at your home directory:
 
@@ -30,3 +40,24 @@ cp -r minimal-haskell-emacs/.emacs.d ~/
 
 Now just run Emacs and start hacking!
 
+---
+
+### Extra useful shortcuts:
+
+Files:
+
+- `F8` - Toggle [neotree](https://github.com/jaypei/emacs-neotree)
+
+Buffers:
+
+- `F7` - Open buffers list
+- `C-\`` / `C-~` - next / previous buffer
+
+Windows:
+
+- `C-tab` - switch window
+- `M-<arrow>` - move to window in direction
+
+Haskell:
+
+- `C-:` - In a haskell buffer, search this word in hoogle
