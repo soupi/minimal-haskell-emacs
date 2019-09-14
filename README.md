@@ -11,7 +11,8 @@ A minimal emacs configuration for haskell programming using [dante](https://gith
 Package management approach is based on [this tutorial](http://y.tsutsumi.io/emacs-from-scratch-part-2-package-management.html).
 
 To get a haskell compiler, I recommend downloading [Stack](https://haskell-lang.org/get-started) and running `stack setup` to install GHC.
-Since `stack setup` does not install ghci in the global environment, you may want to add a script to do that with these commands:
+
+Since `stack setup` does not install ghci in the global environment, you may want to run this command to create a `~/.local/bin/ghci` executable that will run with the global stack environment:
 
 ```sh
 if [ ! -f ~/.local/bin/ghci ]; then
@@ -20,7 +21,6 @@ if [ ! -f ~/.local/bin/ghci ]; then
     chmod +x ~/.local/bin/ghci
 fi
 ```
-
 
 To install this configuration, clone the repository and place the following files at your home directory:
 
