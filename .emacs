@@ -30,6 +30,10 @@
 (global-set-key (kbd "M-<up>") 'windmove-up)              ; move to upper window
 (global-set-key (kbd "M-<down>") 'windmove-down)          ; move to lower window
 
+;; enable visual feedback on selections
+;(setq transient-mark-mode t)
+
+
 (global-set-key (kbd "C-~") 'next-buffer)
 (global-set-key (kbd "C-`") 'previous-buffer)
 
@@ -64,7 +68,4 @@
 ;; I use version control, don't annoy me with backup files everywhere
 (setq make-backup-files nil)
 (setq auto-save-default nil)
-
-
-;;;;;;;;
 

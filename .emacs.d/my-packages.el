@@ -13,8 +13,9 @@
     evil
     popwin
 
-    color-theme
     seti-theme
+
+    neotree
 
     popup
     company
