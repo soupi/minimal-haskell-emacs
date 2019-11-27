@@ -22,6 +22,7 @@
     flycheck-pos-tip
     flycheck-color-mode-line
 
+    attrap
     dante
     )
    "a list of packages to ensure are installed at launch.")
