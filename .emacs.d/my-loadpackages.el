@@ -17,10 +17,10 @@
 
 ;; COMPLETION
 
+(require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 
 ;shortcut for completion
-(add-hook 'after-init-hook 'global-company-mode)
 (global-set-key (kbd "C-c w") 'company-complete)
 
 ;after how many letters do we want to get completion tips? 1 means from the first letter
