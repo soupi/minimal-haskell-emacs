@@ -64,3 +64,4 @@ Windows:
 Haskell:
 
 - `C-:` - In a haskell buffer, search this word in hoogle
+- `M-,` - Jump back after 'Goto definition' (`M-.`)
