@@ -16,8 +16,8 @@ Since `stack setup` does not install ghci in the global environment, you may wan
 
 ```sh
 if [ ! -f ~/.local/bin/ghci ]; then
-    echo "#\!/bin/bash" > ~/.local/bin/ghci;
-    echo "stack exec -- ghci \$@" >> ~/.local/bin/ghci;
+    echo '#!/bin/bash' > ~/.local/bin/ghci;
+    echo 'stack exec -- ghci $@' >> ~/.local/bin/ghci;
     chmod +x ~/.local/bin/ghci;
     echo "~/.local/bin/ghci created."
 else
