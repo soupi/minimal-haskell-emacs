@@ -25,6 +25,25 @@ else
 fi
 ```
 
+Optional: If you want to add `ghc` and `runghc` as well, use:
+
+```sh
+if [ ! -f ~/.local/bin/ghc ]; then
+    echo '#!/bin/bash' > ~/.local/bin/ghc;
+    echo 'stack exec -- ghc $@' >> ~/.local/bin/ghc;
+    chmod +x ~/.local/bin/ghc;
+    echo "~/.local/bin/ghc created."
+else
+    echo "~/.local/bin/ghc already exists."
+if [ ! -f ~/.local/bin/runghc ]; then
+    echo '#!/bin/bash' > ~/.local/bin/runghc;
+    echo 'stack exec -- runghc $@' >> ~/.local/bin/runghc;
+    chmod +x ~/.local/bin/runghc;
+    echo "~/.local/bin/runghc created."
+else
+    echo "~/.local/bin/runghc already exists."
+```
+
 To install this configuration, clone the repository and place the following files at your home directory:
 
 - `.emacs` - emacs will call this file first which will trigger the whole thing. Also contains a few convenient tweaks.
