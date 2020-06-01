@@ -37,6 +37,8 @@ fi
 
 else
     echo "~/.local/bin/ghc already exists."
+fi
+
 if [ ! -f ~/.local/bin/runghc ]; then
     echo '#!/bin/bash' > ~/.local/bin/runghc;
     echo 'stack exec -- runghc $@' >> ~/.local/bin/runghc;
