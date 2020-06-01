@@ -33,6 +33,8 @@ if [ ! -f ~/.local/bin/ghc ]; then
     echo 'stack exec -- ghc $@' >> ~/.local/bin/ghc;
     chmod +x ~/.local/bin/ghc;
     echo "~/.local/bin/ghc created."
+fi
+
 else
     echo "~/.local/bin/ghc already exists."
 if [ ! -f ~/.local/bin/runghc ]; then
@@ -42,6 +44,7 @@ if [ ! -f ~/.local/bin/runghc ]; then
     echo "~/.local/bin/runghc created."
 else
     echo "~/.local/bin/runghc already exists."
+fi
 ```
 
 To install this configuration, clone the repository and place the following files at your home directory:
