@@ -10,6 +10,10 @@
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
+(require 'imenu-list)
+(global-set-key [f6] 'imenu-list-smart-toggle)
+(setq imenu-list-idle-update-delay 0.3)
+(setq imenu-list-size 0.2)
 
 ;;COLOR THEMES
 

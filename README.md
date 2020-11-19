@@ -78,6 +78,10 @@ Buffers:
 - `F7` - Open buffers list
 - `C-backtick` / `C-~` - next / previous buffer
 
+Module Overview:
+
+- `F6` - Toggle [imenu-list](https://github.com/bmag/imenu-list)
+
 Windows:
 
 - `C-tab` - switch window
