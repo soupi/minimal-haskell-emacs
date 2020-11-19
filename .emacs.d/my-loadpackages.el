@@ -92,6 +92,19 @@
 
   (define-key evil-normal-state-map (kbd "C-.") nil)
   (define-key evil-normal-state-map (kbd "M-.") nil)
+
+; Uncomment to replace hjkl with jkl; for navigation
+;  (define-key evil-motion-state-map "h" nil)
+;  (define-key evil-motion-state-map "j" nil)
+;  (define-key evil-motion-state-map "k" nil)
+;  (define-key evil-motion-state-map "l" nil)
+;  (define-key evil-motion-state-map "j" 'evil-backward-char)
+;  (define-key evil-motion-state-map "k" 'evil-next-line)
+;  (define-key evil-motion-state-map "l" 'evil-previous-line)
+;  (define-key evil-motion-state-map ";" 'evil-forward-char)
+;  (define-key evil-motion-state-map "q" nil)
+;  (define-key evil-normal-state-map "q" nil)
+
 )
 
 
