@@ -16,6 +16,7 @@
     seti-theme
 
     neotree
+    imenu-list
 
     popup
     company
