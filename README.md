@@ -8,7 +8,7 @@ A minimal emacs configuration for haskell programming using [dante](https://gith
 
 [Visit dante's README.org to see the features list for Haskell editing](https://github.com/jyp/dante/blob/master/README.org).
 
-Package management approach is based on [this tutorial](http://y.tsutsumi.io/emacs-from-scratch-part-2-package-management.html).
+Package management approach is based on [this tutorial](https://toumorokoshi.wordpress.com/2014/02/01/emacs-from-scratch-part-2-package-management/).
 
 To get a haskell compiler, I recommend downloading [Stack](https://haskell-lang.org/get-started) and running `stack setup` to install GHC.
 
