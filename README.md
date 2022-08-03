@@ -10,42 +10,7 @@ A minimal emacs configuration for haskell programming using [dante](https://gith
 
 Package management approach is based on [this tutorial](https://toumorokoshi.wordpress.com/2014/02/01/emacs-from-scratch-part-2-package-management/).
 
-To get a haskell compiler, I recommend downloading [Stack](https://haskell-lang.org/get-started) and running `stack setup` to install GHC.
-
-Since `stack setup` does not install ghci in the global environment, you may want to run this command to create a `~/.local/bin/ghci` executable that will run with the global stack environment:
-
-```sh
-if [ ! -f ~/.local/bin/ghci ]; then
-    echo '#!/bin/bash' > ~/.local/bin/ghci;
-    echo 'stack exec -- ghci $@' >> ~/.local/bin/ghci;
-    chmod +x ~/.local/bin/ghci;
-    echo "~/.local/bin/ghci created."
-else
-    echo "~/.local/bin/ghci already exists."
-fi
-```
-
-Optional: If you want to add `ghc` and `runghc` as well, use:
-
-```sh
-if [ ! -f ~/.local/bin/ghc ]; then
-    echo '#!/bin/bash' > ~/.local/bin/ghc;
-    echo 'stack exec -- ghc $@' >> ~/.local/bin/ghc;
-    chmod +x ~/.local/bin/ghc;
-    echo "~/.local/bin/ghc created."
-else
-    echo "~/.local/bin/ghc already exists."
-fi
-
-if [ ! -f ~/.local/bin/runghc ]; then
-    echo '#!/bin/bash' > ~/.local/bin/runghc;
-    echo 'stack exec -- runghc $@' >> ~/.local/bin/runghc;
-    chmod +x ~/.local/bin/runghc;
-    echo "~/.local/bin/runghc created."
-else
-    echo "~/.local/bin/runghc already exists."
-fi
-```
+To get a haskell compiler and toolchain, checkout [ghcup](https://haskell.org/ghcup).
 
 To install this configuration, clone the repository and place the following files at your home directory:
 
